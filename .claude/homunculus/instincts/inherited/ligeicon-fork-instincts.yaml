@@ -1,0 +1,408 @@
+# Instincts generated from https://github.com/NGshiyu/ligeicon-fork
+# Generated: 2026-05-08T13:49:50.623Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: ligeicon-fork-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/NGshiyu/ligeicon-fork
+---
+
+# Ligeicon Fork Commit Length
+
+## Action
+
+Keep commit messages concise (~21 characters)
+
+## Evidence
+
+- Average commit message length: 21 chars
+- Based on 100 commits
+
+---
+id: ligeicon-fork-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/NGshiyu/ligeicon-fork
+---
+
+# Ligeicon Fork Naming Files
+
+## Action
+
+Use camelCase naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: camelCase
+
+---
+id: ligeicon-fork-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/NGshiyu/ligeicon-fork
+---
+
+# Ligeicon Fork Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: ligeicon-fork-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/NGshiyu/ligeicon-fork
+---
+
+# Ligeicon Fork Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: ligeicon-fork-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/NGshiyu/ligeicon-fork
+---
+
+# Ligeicon Fork Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: ligeicon-fork-workflow-feature-development
+trigger: "when implementing a new feature"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/NGshiyu/ligeicon-fork
+---
+
+# Ligeicon Fork Workflow Feature Development
+
+## Action
+
+Follow the feature-development workflow:
+1. Add feature implementation
+2. Add tests for feature
+3. Update documentation
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~13x per month
+- Files: 
+
+---
+id: ligeicon-fork-workflow-add-icon-and-auto-update-metadata
+trigger: "when doing add icon and auto update metadata"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/NGshiyu/ligeicon-fork
+---
+
+# Ligeicon Fork Workflow Add Icon And Auto Update Metadata
+
+## Action
+
+Follow the add-icon-and-auto-update-metadata workflow:
+1. Add one or more PNG files to an appropriate subdirectory under 'icon/' (e.g., icon/emby/, icon/04ProxySoft/).
+2. Commit with message like 'Add files via upload'.
+3. Trigger an auto-update process that updates 'README.md' and one or more JSON metadata files (e.g., 'lige-emby-icon.json', 'ligeicon.json').
+4. Commit the updated metadata files with message 'Auto update [skip ci]'.
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~15x per month
+- Files: icon/*/*.png, README.md, lige-emby-icon.json
+
+---
+id: ligeicon-fork-workflow-update-rule-list
+trigger: "when doing update rule list"
+confidence: 0.65
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/NGshiyu/ligeicon-fork
+---
+
+# Ligeicon Fork Workflow Update Rule List
+
+## Action
+
+Follow the update-rule-list workflow:
+1. Edit the relevant list file in 'rule/' (e.g., 'proxylist.list', 'openai.list').
+2. Commit the change with a message like 'Update proxylist.list' or 'Update openai.list'.
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~3x per month
+- Files: rule/proxylist.list, rule/openai.list
+
+---
+id: ligeicon-fork-instinct-file-naming
+trigger: "When creating a new Python file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: NGshiyu/ligeicon-fork
+---
+
+# Ligeicon Fork Instinct File Naming
+
+## Action
+
+Name the file using camelCase (e.g., myModule.py)
+
+## Evidence
+
+- Pattern in namingConventions.files: camelCase
+
+---
+id: ligeicon-fork-instinct-function-naming
+trigger: "When defining a new Python function"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: NGshiyu/ligeicon-fork
+---
+
+# Ligeicon Fork Instinct Function Naming
+
+## Action
+
+Name the function using camelCase (e.g., processData)
+
+## Evidence
+
+- Pattern in namingConventions.functions: camelCase
+
+---
+id: ligeicon-fork-instinct-class-naming
+trigger: "When defining a new Python class"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: NGshiyu/ligeicon-fork
+---
+
+# Ligeicon Fork Instinct Class Naming
+
+## Action
+
+Name the class using PascalCase (e.g., MyClass)
+
+## Evidence
+
+- Pattern in namingConventions.classes: PascalCase
+
+---
+id: ligeicon-fork-instinct-constant-naming
+trigger: "When declaring a constant in Python"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: NGshiyu/ligeicon-fork
+---
+
+# Ligeicon Fork Instinct Constant Naming
+
+## Action
+
+Name the constant using SCREAMING_SNAKE_CASE (e.g., MAX_SIZE)
+
+## Evidence
+
+- Pattern in namingConventions.constants: SCREAMING_SNAKE_CASE
+
+---
+id: ligeicon-fork-instinct-import-style
+trigger: "When importing modules in Python"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: NGshiyu/ligeicon-fork
+---
+
+# Ligeicon Fork Instinct Import Style
+
+## Action
+
+Use relative imports
+
+## Evidence
+
+- Pattern in importStyle: relative
+
+---
+id: ligeicon-fork-instinct-export-style
+trigger: "When exporting functions or classes from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: NGshiyu/ligeicon-fork
+---
+
+# Ligeicon Fork Instinct Export Style
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in exportStyle: named
+
+---
+id: ligeicon-fork-instinct-test-location
+trigger: "When adding tests for new features"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: NGshiyu/ligeicon-fork
+---
+
+# Ligeicon Fork Instinct Test Location
+
+## Action
+
+Place test files in a separate directory from source files
+
+## Evidence
+
+- Pattern in architecture.testLocation: separate
+
+---
+id: ligeicon-fork-instinct-feature-test-sequence
+trigger: "When implementing a new feature"
+confidence: 0.7
+domain: testing
+source: repo-analysis
+source_repo: NGshiyu/ligeicon-fork
+---
+
+# Ligeicon Fork Instinct Feature Test Sequence
+
+## Action
+
+Add tests for the feature after implementation and before documentation update
+
+## Evidence
+
+- feature-development workflow: Add tests for feature follows implementation
+
+---
+id: ligeicon-fork-instinct-commit-message-generic
+trigger: "When committing new or updated files"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: NGshiyu/ligeicon-fork
+---
+
+# Ligeicon Fork Instinct Commit Message Generic
+
+## Action
+
+Use simple, direct commit messages such as 'Add files via upload', 'Update [filename]', or 'Delete [filename]'
+
+## Evidence
+
+- Seen in commits: 'Add files via upload', 'Update proxylist.list', 'Delete icon/emby/tdck_emby.png'
+
+---
+id: ligeicon-fork-instinct-commit-auto-update
+trigger: "When committing auto-generated updates to metadata files"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: NGshiyu/ligeicon-fork
+---
+
+# Ligeicon Fork Instinct Commit Auto Update
+
+## Action
+
+Use commit message 'Auto update [skip ci]'
+
+## Evidence
+
+- Seen in commits: 'Auto update [skip ci]'
+
+---
+id: ligeicon-fork-instinct-add-icon-workflow
+trigger: "When a new icon image needs to be added"
+confidence: 0.98
+domain: workflow
+source: repo-analysis
+source_repo: NGshiyu/ligeicon-fork
+---
+
+# Ligeicon Fork Instinct Add Icon Workflow
+
+## Action
+
+Add PNG(s) to the appropriate 'icon/' subdirectory, commit with 'Add files via upload', trigger auto-update for metadata (README.md, JSON files), and commit with 'Auto update [skip ci]'
+
+## Evidence
+
+- add-icon-and-auto-update-metadata workflow
+- Seen in commit sequences and files: icon/*/*.png, README.md, lige-emby-icon.json, ligeicon.json
+
+---
+id: ligeicon-fork-instinct-update-rule-list-workflow
+trigger: "When network/proxy or OpenAI rules need updating"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: NGshiyu/ligeicon-fork
+---
+
+# Ligeicon Fork Instinct Update Rule List Workflow
+
+## Action
+
+Edit the relevant file in 'rule/' (proxylist.list or openai.list) and commit with 'Update [filename]'
+
+## Evidence
+
+- update-rule-list workflow
+- Seen in commits: 'Update proxylist.list', 'Update openai.list'
+
